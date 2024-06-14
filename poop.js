@@ -29,7 +29,7 @@ document.getElementById("submitButton").onclick = function () {
     c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
     
     document.getElementById("cLabel").innerHTML = "Side C: " + c;
-}*/
+}
 
 let count = 0;
 
@@ -48,6 +48,23 @@ document.getElementById("resetBtn").onclick = function () {
     count= 0;
     document.getElementById("countLbl").innerHTML = "0";
 }
+*/
 
+
+let x;
+let y;
+let z;
+
+
+
+document.getElementById("rollButton").onclick = function () {
+    let x = Math.floor(Math.random() * 20) + 1;
+    let y = Math.floor(Math.random() * 20) + 1;
+    let z = Math.floor(Math.random() * 20) + 1;
+
+    document.getElementById("xLabel").innerHTML = x;
+    document.getElementById("yLabel").innerHTML = y;
+    document.getElementById("zLabel").innerHTML = z;
+}
 
 
